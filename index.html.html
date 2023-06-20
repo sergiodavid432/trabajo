@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><style></style></head><body id="preview">
+<pre><code>                           # Burdel Los Gusaneros
+</code></pre>
+<p class="has-line-data" data-line-start="2" data-line-end="3">El programa comienza mostrando un mensaje de bienvenida al burdel.</p>
+<p class="has-line-data" data-line-start="4" data-line-end="5">Luego, utiliza un objeto Scanner para obtener la entrada del usuario. Solicita el número de prostitutas deseadas y el presupuesto.</p>
+<p class="has-line-data" data-line-start="6" data-line-end="7">Se crean varios arreglos para almacenar los datos de cada prostituta: precios, razas, géneros y resultados (vuelta).</p>
+<p class="has-line-data" data-line-start="8" data-line-end="9">A continuación, se utiliza un bucle for para iterar sobre cada prostituta y obtener su información. Pide el método de pago, la raza, el precio y el género. Verifica que se ingresen valores válidos para el método de pago y el género.</p>
+<p class="has-line-data" data-line-start="10" data-line-end="11">El programa calcula la vuelta restando el precio de cada prostituta al presupuesto ingresado.</p>
+<p class="has-line-data" data-line-start="12" data-line-end="13">Después de recopilar todos los datos, se muestra un resumen de los datos ingresados, incluyendo el número de prostitutas, la información detallada de cada una y la vuelta obtenida.</p>
+<p class="has-line-data" data-line-start="14" data-line-end="15">Finalmente, se muestra un mensaje de agradecimiento por la compra.</p>
+<h2 class="code-line" data-line-start="16" data-line-end="17"><a id="Diagrama_de_Flujo_de_Uso_16"></a>Diagrama de Flujo de Uso</h2>
+<p class="has-line-data" data-line-start="18" data-line-end="19"><img src="https://raw.githubusercontent.com/Usuario/Repositorio/Rama/Ruta/Imagen.png" alt="Diagrama de Flujo de Uso"></p>
+<h2 class="code-line" data-line-start="20" data-line-end="21"><a id="Pseudocdigo_20"></a>Pseudocódigo</h2>
+<pre><code class="has-line-data" data-line-start="23" data-line-end="92" class="language-plaintext">Escribir(&quot;±-----------------------------------------------+&quot;)
+Escribir(&quot;| Bienvenido al burdel Los Gusaneros |&quot;)
+Escribir(&quot;±-----------------------------------------------+&quot;)
+
+Definir genero2 Como Carácter
+Definir numeroProstitutas Como Entero
+Definir precios Como Entero[10]
+Definir raza Como Carácter[10]
+Definir generoProstituta Como Carácter[10]
+Definir presupuesto Como Entero
+Definir resultado Como Entero[10]
+Definir pago Como Carácter[10]
+
+Escribir(&quot;Ingrese el número de prostitutas que desee (máximo 10): &quot;)
+Leer numeroProstitutas
+
+Escribir(&quot;Digite su presupuesto para las prostitutas: &quot;)
+Leer presupuesto
+
+Para i Desde 0 Hasta numeroProstitutas-1 Hacer
+    Escribir(&quot;-------------------------------------------------&quot;)
+
+    pagoValido &lt;- Falso
+    Mientras No pagoValido Hacer
+        Escribir(&quot;Elija su método de pago para la prostituta &quot;, i+1, &quot; (E/T): &quot;)
+        Leer pago[i]
+
+        Si pago[i] = &quot;E&quot; O pago[i] = &quot;T&quot; Entonces
+            pagoValido &lt;- Verdadero
+        Sino
+            Escribir(&quot;Perrito, este burdel solo acepta efectivo (E) o tarjeta de crédito (T).&quot;)
+        FinSi
+    FinMientras
+
+    Escribir(&quot;Ingrese la raza de la prostituta &quot;, i+1, &quot;: &quot;)
+    Leer raza[i]
+
+    Escribir(&quot;Ingrese el precio de la prostituta &quot;, i+1, &quot;: &quot;)
+    Leer precios[i]
+
+    generoValido &lt;- Falso
+    Mientras No generoValido Hacer
+        Escribir(&quot;Ingrese el género de su prostituta &quot;, i+1, &quot; (M/F): &quot;)
+        Leer genero2
+
+        Si genero2 = &quot;M&quot; O genero2 = &quot;F&quot; Entonces
+            generoValido &lt;- Verdadero
+        Sino
+            Escribir(&quot;Perrito, este burdel solo acepta género 'M' o 'F'. Vuelva a intentarlo.&quot;)
+        FinSi
+    FinMientras
+
+    generoProstituta[i] &lt;- genero2
+    resultado[i] &lt;- presupuesto - precios[i]
+FinPara
+
+Escribir(&quot;+------------------------------------------------+&quot;)
+Escribir(&quot;|             Datos ingresados                   |&quot;)
+Escribir(&quot;+------------------------------------------------+&quot;)
+Escribir(&quot;Número de prostitutas: &quot;, numeroProstitutas)
+
+Para i Desde 0 Hasta numeroProstitutas-1 Hacer
+    Escribir(&quot;Prostituta &quot;, i+1, &quot;  Raza: &quot;, raza[i], &quot;, Precio: &quot;, precios[i], &quot;, Género elegido: &quot;, generoProstituta[i], &quot;, Su vuelta es: &quot;, resultado[i])
+FinPara
+
+Escribir(&quot;+------------------------------------------------+&quot;)
+Escribir(&quot;|           Gracias por su compra                |&quot;)
+Escribir(&quot;+------------------------------------------------+&quot;)
+
+</code></pre>
+</body></html>

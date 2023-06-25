@@ -19,7 +19,7 @@ Finalmente, se muestra un mensaje de agradecimiento por la compra.
 
 ![Diagrama de Flujo de Uso](https://github.com/sergiodavid432/trabajo/blob/main/_Diagrama%20de%20flujo.png?raw=true)
 ## historia de usuario
-![Diagrama de Flujo de Uso](
+![historia de usuario ](https://github.com/sergiodavid432/trabajo/blob/main/imagen1.png?raw=true)
 
 ## Pseudocódigo
 

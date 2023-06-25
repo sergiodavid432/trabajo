@@ -17,7 +17,7 @@ Finalmente, se muestra un mensaje de agradecimiento por la compra.
 
 ## Diagrama de Flujo de Uso
 
-![Diagrama de Flujo de Uso](_Diagrama de flujo.png)
+![Diagrama de Flujo de Uso](Diagrama de flujo.png)
 
 ## Pseudocódigo
 

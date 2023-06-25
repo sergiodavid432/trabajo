@@ -17,7 +17,7 @@ Finalmente, se muestra un mensaje de agradecimiento por la compra.
 
 ## Diagrama de Flujo de Uso
 
-![Diagrama de Flujo de Uso](https://raw.githubusercontent.com/Usuario/Repositorio/Rama/Ruta/Imagen.png)
+![Diagrama de Flujo de Uso](https://lucid.app/lucidchart/531d2f90-f270-43dc-b0fb-b11465c90e0a/edit?viewport_loc=-56%2C166%2C2206%2C1094%2C0_0&invitationId=inv_d141fa16-9d68-4a34-9c12-0f4a9de2ed62)
 
 ## Pseudocódigo
 

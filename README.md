@@ -22,7 +22,7 @@ Finalmente, se muestra un mensaje de agradecimiento por la compra.
 ![historia de usuario ](https://github.com/sergiodavid432/trabajo/blob/main/imagen1.png?raw=true)
 ## diagrama de uso
 ![diagrama de uso  ](![image](https://github.com/sergiodavid432/trabajo/assets/137128265/64683b36-cf64-4ec4-85ff-fe8297c9bdc7)
-)
+
 ## Pseudocódigo
 
 
